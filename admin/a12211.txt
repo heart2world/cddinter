@@ -1,0 +1,2 @@
+'Select arc.*,t.typedir,t.typename,t.namerule,t.namerule2,t.ispart,t.moresite,t.siteurl,t.sitepath
+                        from `#@__addoninfos` arc left join #@__arctype t on arc.typeid=t.id   where arc.aid=120 '

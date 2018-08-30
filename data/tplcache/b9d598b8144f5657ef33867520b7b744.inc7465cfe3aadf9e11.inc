@@ -1,0 +1,13 @@
+<?php
+$z[0]=Array("arcurl","",215,231);
+$z[0][4]=array();
+$z[1]=Array("litpic","",288,304);
+$z[1][4]=array();
+$z[2]=Array("title","",491,506);
+$z[2][4]=array();
+$z[3]=Array("catname","",554,571);
+$z[3][4]=array();
+$z[4]=Array("gongneng","",623,641);
+$z[4][4]=array();
+
+?>

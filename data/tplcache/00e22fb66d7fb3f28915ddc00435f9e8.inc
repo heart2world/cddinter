@@ -1,0 +1,1 @@
+<img src="[field:url /]" class="fr" data-row="[field:id /]">

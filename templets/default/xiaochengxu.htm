@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="keywords" content="{dede:global.cfg_keywords/}">
+  <meta name="description" content="{dede:global.cfg_description/}">
+  <meta name="title" content="{dede:global.cfg_webname/}-小程序开发">
+  <meta name="author" content="迪因特科技有限公司">
+  <meta name="Copyright" content="迪因特科技有限公司">
+  <!-- <meta name="description" content=""> -->
+  <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核-->
+  <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+  <!-- IOS6全屏 Chrome高版本全屏-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes"> 
+  <!-- 让360双核浏览器用webkit内核渲染页面 -->
+  <meta name="renderer" content="webkit">
+  <!-- Mobile Specific Metas-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">  <!-- CSS-->
+  <link href="../public/Css/front/reset.css-version=2017120601.css" rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/magicwall.css-version=2017120601.css" rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/style.css-version=2017120601.css" rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/style_1280.css-version=2017120601.css" rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/style_1024.css-version=2017120601.css" rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/style_768.css-version=2017120601-version=2017120601.css"  rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/style_320.css-version=2017120601.css"  rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/style_retina.css-version=2017120601.css"  rel="stylesheet" type="text/css">
+  <link href="../public/Css/front/swiper.3.1.2.min.css-version=2017120601.css"  rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../public/Js/front/jquery-1.11.1.min.js" ></script>
+  <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?cedd2e05b6b1f518962b887ed595bb1c";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+  <!--[if lt IE 9]>
+      <script src="../public/html5shiv/r29/html5.js" ></script>
+  <![endif]-->
+  <!-- Favicons-->
+    <!-- <link rel="shortcut icon" href="http://yurtree.com/favicon.ico">-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+  <title>{dede:global.cfg_webname/}-小程序开发</title>
+  <style>
+    .img_nav p{display: block;}
+  </style>
+  
+</head>
+<body class="bg-tu">
+  <div class="container">
+    <div id="layout-css-1" style="display: none;"><style type="text/css">.carousel-partners .eachrow{width:201px;}</style></div>
+    <div id="layout-css-2" style="display: none;"><style type="text/css">.banner_list{width:1357px;}</style></div>
+    
+     <header class="ai-header" id="ai-header">
+	<div class="ai-nav-wrap">
+	  <div class="ai-nav">
+		<a href="../index.html"><div class="ai-logo"></div></a>
+		<div class="ai-imlink">
+		  <i class="tel_icon"></i><a href="tel:{dede:global.cfg_cdtel/}" style="color:#fff;">{dede:global.cfg_cdtel/}</a>
+		</div>
+		<div class="sidebtn"></div>
+	   <!-- <div class="qq_top_nav">
+			<div class="qq_box">
+			  <div class="img_qq_control img_qq_pic icon_qq"></div>
+			</div>
+			<div class="qq_tips_wrap">
+			</div>
+		  </div>-->
+
+		<div class="ai-nav-list">
+		  <div class="ai-nav-redLine"><!-- 这个预留了一个滚动条接口 --></div>
+		  <a href="../index.html#index_top"  class="ai-nav-listitem cur" toelem="index_top">首页</a>
+		  <a href="../index.html#index_serve"  class="ai-nav-listitem " toelem="index_serve">服务项目</a>
+		  <a href="../index.html#index_case"  class="ai-nav-listitem " toelem="index_case">客户案例</a>
+		  <a href="../index.html#index_news"  class="index_news ai-nav-listitem " toelem="index_news">新闻资讯</a>
+		  <a href="../index.html#index_team"  class="ai-nav-listitem " toelem="index_about">团队介绍</a>
+		  <a href="../index.html#index_contact"  class="ai-nav-listitem " toelem="index_contact">联系我们</a>
+		</div>
+	  </div>
+	</div>
+	</header>  
+	 <div class="ai-banner-wrap ai-eachcont" id="index_top" nav_index="0">
+        <div class="ai-banner-frame clearfix">
+            <!--首屏Banner   not-active / active -->
+            <!--软件定制开发Banner-->
+             <div class="banner_list ai-banner-5 not-active" style="background-image:url('/Public/Images/front/banner-qiye-bk.png');background-size:contain;background-repeat: no-repeat;background-position: center center;">
+                <!-- <img src="/Public/Images/front/banner-qiye-bk.png" alt="" class="ai-banner-img"> -->
+                <a href="javascript:;" class="intLink">
+                  <p class="text1"><img src="/Public/Images/front/banner-qiye-1.png"></p>
+                  <p class="text2"><img src="/Public/Images/front/banner-qiye-2.png"></p>
+                  <p class="text3" onclick="location.href='/Index/index#index_contact'"><img src="/Public/Images/front/banner-qiye-3.png"></p>
+                  <p class="text4"><img src="/Public/Images/front/banner-qiye-4.png"></p>
+                </a>
+            </div>  
+           <div class="banner_list ai-banner-3">
+                <img src="/Public/Images/front/biggest-banner-bg-3.jpg" alt="" class="ai-banner-img">
+                <div class="ai-banner-font mid_wrap na-hide">
+                    <div class="mid_block">
+                        <img src="/Public/Images/front/biggest-banner-bg-3-item-1.png" alt="" class="ab3_mb_img_1">
+                    </div>
+                </div>
+                <div class="ab3_mb_img_2_wrap na-hide">
+                    <img src="/Public/Images/front/banner-3.5.png" alt="" class="ab3_mb_img_2">
+                    <p><img src="/Public/Images/front/biggest-banner-bg-3-item-4.png" alt="" class="ab3_mb_img_3"></p>
+                </div>
+               <div class="ab3_mb_t1 na-hide">templet</div>
+                <div class="ab3_mb_t2 na-hide"><span>海量模版<em>、组件库</em>满足<em>您对商城的</em>所有需求</span></div>
+                <div class="ab3_mb_t3 na-hide"><font><i>更能</i>定制开发<i>，</i>打造专属小程序
+</font></div>
+                <div class="ab3_mb_t4 na-hide" style="font-size: 15px; color: #fff;">（小程序名称唯一）今日你不抢注，明日人家就用它开店揽客</div>
+            </div>
+        </div>
+        
+        <!-- ai banner controller -->
+        <ul class="ai-banner-pages fix_3px_spc"></ul>
+        <div class="ai-banner-prev font-icons"><span></span></div>
+        <div class="ai-banner-next font-icons"><span></span></div>
+    </div>
+    <!-- *********************************** 
+        小程序
+    *********************************** -->
+    <div class="ai-eachcont con-wite" id="index_serve" nav_index="1">
+        <section class="business active">
+            <div class="box" style="height:auto">
+                <div class="ecpadding_1 txa_c">
+                    <h2 class="title-big" style="font-size: 36px;">模板：各式各样皆有 总有一款满足您</h2>
+                    <h3 class="title-small">模板风格：淘宝、京东、苏宁、唯品会等主流电商风格皆收录其中<br/>功能：分销、抽奖活动、拼团等主流营销功能全面覆盖</h3>
+                </div>
+                <ul class="items list-inline" style="text-align: center;">
+                    <li class="wxweb">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>官网小程序</strong>
+                        <div>多种模式轻松搭建
+                            <br>一键生成，三秒上线</div></li>
+                    <li class="wxweb item2">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>电商小程序</strong>
+                        <div>拖拽式商城
+                            <br>助力移动电商</div></li>
+                    <li class="wxweb item3">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>预约小程序</strong>
+                        <div>小程序预约到店服务</div></li>
+                    <li class="wxweb item4">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>多门店小程序</strong>
+                        <div>定制手机网站 / 微网站制作
+                            <br>连锁商超、线下分销、同城平台</div></li>
+                    <li class="wxweb item5">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>外卖小程序</strong>
+                        <div>小程序线上下单
+                            <br>线下送达</div></li>
+					<li class="wxweb item6">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>餐饮小程序</strong>
+                        <div>到店支付、排队点餐
+                            <br>小票打印</div></li>
+                    <li class="wxweb item7">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>营销小程序</strong>
+                        <div>小程序营销，传播利器</div></li>
+                    <li class="wxweb item8">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i>
+                        </i>
+                        <strong>分销小程序</strong>
+                        <div>三级返佣、无限裂变
+                        <br>低成本快速获客</div></li>
+                </ul>
+                <!-- <label></label> -->
+            </div>
+        </section>
+        <div class="con_rank_title">
+            <h3 style="color:#333; font-size: 36px;">上百个功能，打造营销组合拳，拳拳打到客户心坎上</h3>
+            <h5 class="title-small">除了基础商城的商品展示、在线购买、发货、物流信息等功能外<br/>更有诸多营销功能，一年四季都是营销狂欢日</h5>
+        </div>
+        <div class="flow-case-con six_row_sprit pad_tb_42">
+            <div class="sprows">
+                <div class="txa_c spricon">
+                    <div class="circle-icon circle-icon-2 ci-4"></div>
+                </div>
+                <div class="txa_c sprdetal">
+                    <div class="trdcon">
+                        <h2 class="title-medium trd-title">电销商城</h2>
+                        <div class="trd-detal">
+                            <p>门店展示、商品展示<br/>活动展示</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprows">
+                <div class="txa_c spricon">
+                    <div class="circle-icon circle-icon-2 ci-1"></div>
+                </div>
+                <div class="txa_c sprdetal">
+                    <div class="trdcon">
+            <h2 class="title-medium trd-title">抽奖活动</h2>
+                        <div class="trd-detal">
+                            <p>大转盘、刮刮卡<br/>大礼包等</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprows">
+                <div class="txa_c spricon">
+                    <div class="circle-icon circle-icon-2 ci-5"></div>
+                </div>
+                <div class="txa_c sprdetal">
+                    <div class="trdcon">
+                        <h2 class="title-medium trd-title">三级分销</h2>
+                        <div class="trd-detal">
+                            <p>关联上下级、设定返<br/>佣、设定级数等</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear case-sprit-line"> </div>
+            <div class="sprows">
+                <div class="txa_c spricon">
+                    <div class="circle-icon circle-icon-2 ci-6"></div>
+                </div>
+                <div class="txa_c sprdetal">
+                    <div class="trdcon">
+                        <h2 class="title-medium trd-title">会员积分</h2>
+                        <div class="trd-detal">
+                            <p>积分抽奖、活动积分<br/>积分兑换等</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprows">
+                <div class="txa_c spricon">
+                    <div class="circle-icon circle-icon-2 ci-7"></div>
+                </div>
+                <div class="txa_c sprdetal">
+                    <div class="trdcon">
+                        <h2 class="title-medium trd-title">卡券</h2>
+                        <div class="trd-detal">
+                            <p>折扣券、储值卡、抵用<br/>券、活动券等</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sprows">
+                <div class="txa_c spricon">
+                    <div class="circle-icon circle-icon-2 ci-8"></div>
+                </div>
+                <div class="txa_c sprdetal">
+                    <div class="trdcon">
+                        <h2 class="title-medium trd-title">互动促销</h2>
+                        <div class="trd-detal">
+                            <p>拼团、微红<br/>包、团购等</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- 优势板块 -->
+    <div class="about_cont3">
+        <div class="con_rank_title">
+            <p class="title-small">如果觉得模板还不够，我们还可以提供定制开发服务</p>
+            <h2 class="title-big">定制：半定制或全定制，灵活选择性价比较高的方式</h2>
+        </div>
+        <!-- <h1>我们的优势 模板</h1> -->
+        <p class="pc_none title-small">半定制：商城模板基础上修改或新增功能点<br/>全定制：根据业务模式定制开发，打造专属系统</p>
+        <p class="yd_none title-small" style="display:none;">半定制：商城模板基础上修改或新增功能点<br/>全定制：根据业务模式定制开发，打造专属系统</p>
+          <div class="cont3_main advantage-container clearfix">
+            <div class="fl img_box" >
+                <img src="../Public/Images/front/advan2.png" tppabs="https://beyondin.com/Public/Images/front/about_pic1.jpg" class="fl mr mb" data-row="0">
+             </div>
+			  <div class="fl img_box" >
+                <img src="../Public/Images/front/advan1.png" tppabs="https://beyondin.com/Public/Images/front/about_pic1.jpg" class="fl mr mb" data-row="0">
+             </div>
+        </div>
+    </div>
+    <!-- *********************************** 
+        案例
+    *********************************** -->
+    <div class="ai-eachcont con-black case-grid-wrap" id="index_case" nav_index="2">
+        <div class="con_rank_title">
+            <h2>C</h2>
+            <h4>CASE</h4>
+            <h3>案例</h3>
+      <!-- <h4 style="font-size: 14px; font-weight: 400;">可直接扫码体验哦~</h4> -->
+            <!-- <div class="title">案例展示<a href="#"  class="more">查看更多</a></div> -->
+        </div>
+       <!--案例下导航按钮-->
+        <ul class="c_nav clearfix">
+              <li class="nav_btn li_a" id="li_1"><a href="javascript:;" class="nav_active">电商百货</a></li>
+            <li class="nav_btn" id="li_2"><a href="javascript:;" class="nav_active">金融保险</a></li>
+            <li class="nav_btn" id="li_3"><a href="javascript:;" class="nav_active">线上教育</a></li>
+            <li class="nav_btn" id="li_4"><a href="javascript:;" class="nav_active">其他行业</a></li>        
+        </ul>
+        <!--九宫格图片-->
+        <ul class="case_img clearfix" id="main_1">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='电商百货' typeid='12'}   
+            <li class="img_nav">
+                <a href="[field:arcurl /]"  class="nav_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="case_bg">
+                        <div class="case-box">
+                            <h4>功能：[field:gongneng /]</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg}
+        </ul>
+        <ul class="case_img clearfix main_hide" id="main_2">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='金融保险' typeid='12'} 
+            <li class="img_nav">
+                <a href="[field:arcurl /]"  class="nav_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="case_bg">
+                        <div class="case-box">
+                            <h4>功能：[field:gongneng /]</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg} 
+        </ul>
+        <ul class="case_img clearfix main_hide" id="main_3">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='线上教育' typeid='12'} 
+            <li class="img_nav">
+                <a href="[field:arcurl /]"  class="nav_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="case_bg">
+                        <div class="case-box">
+                            <h4>功能：[field:gongneng /]</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg} 
+        </ul>
+        <ul class="case_img clearfix main_hide" id="main_4">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='其他行业' typeid='12'} 
+            <li class="img_nav">
+                <a href="[field:arcurl /]"  class="nav_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="case_bg">
+                        <div class="case-box">
+                            <h4>功能：[field:gongneng /]</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg}     
+        </ul>
+        <!--移动设备显示-->
+        <ul class="case_deputy mid_hide case_show" id="mid_1">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='电商百货' typeid='12'} 
+            <li class="deputy_li">
+                <a href="[field:arcurl /]"  class="deputy_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="deputy_bg">
+                        <h4>[field:title /]</h4>
+                        <span></span>
+                        <p>[field:gongneng /]</p>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg} 
+        </ul>
+        <ul class="case_deputy mid_hide" id="mid_2">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='金融保险' typeid='12'} 
+            <li class="deputy_li">
+                <a href="[field:arcurl /]"  class="deputy_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="deputy_bg">
+                        <h4>[field:title /]</h4>
+                        <span></span>
+                        <p>[field:gongneng /]</p>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg}      
+        </ul>
+        <ul class="case_deputy mid_hide" id="mid_3">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='在线教育' typeid='12'} 
+             <li class="deputy_li">
+                <a href="[field:arcurl /]"  class="deputy_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="deputy_bg">
+                        <h4>[field:title /]</h4>
+                        <span></span>
+                        <p>[field:gongneng /]</p>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg}   
+        </ul>
+        <ul class="case_deputy mid_hide" id="mid_4">
+            {dede:arclistsg sort='sort' row='9' channelid='-8' keyword='小程序' orderway='desc' keyword1='其他行业' typeid='12'} 
+             <li class="deputy_li">
+                <a href="[field:arcurl /]"  class="deputy_a clearfix">
+                    <img src="[field:litpic /]"  onerror="no_pic(this);" />
+                    <div class="deputy_bg">
+                        <h4>[field:title /]</h4>
+                        <span></span>
+                        <p>[field:gongneng /]</p>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclistsg}             
+        </ul>
+        <div class="clear"> </div>
+       
+    </div>
+   
+     <style>
+    /*全屏查看器样式*/
+    .fullscreen{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+        background-color: #000;
+        display: none;
+    }
+    .fullscreen .fullscreen_slide{
+        background-color: #000;
+    }
+    .fullscreen_slide img{
+        display:block;
+        max-width:100%;
+        max-height:80%;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+    }
+    </style>
+    <!-- 全屏图片查看器-->
+    <div class="swiper-container fullscreen" id="fullscreen">
+        <div class="swiper-wrapper" id="swiper_wrapper">
+        </div>
+    </div>
+   
+    <!-- *********************************** 联系 *********************************** -->
+    {dede:include filename="footer.htm"/}
+
+      <script>
+        // 联系页面切换
+        $('.tab_switch .tab_btn').on('click',function(){
+            var $index = $(this).index();
+            if($(this).hasClass("active"))return;
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.tab_wrapper').find('.tab_content').eq($index).addClass('show').siblings().removeClass('show');
+            $('.contact').toggleClass('map_active');
+            $('.lacation').toggleClass('wz');
+        })
+
+        var is_wenzhou = 0;
+        if (is_wenzhou == 1) {
+            var $index = $(this).index();
+           
+            $('#wz').addClass('active').siblings().removeClass('active');
+            $('.tab_wrapper').find('.tab_content').eq($index).addClass('show').siblings().removeClass('show');
+            $('.contact').toggleClass('map_active');
+            $('.lacation').toggleClass('wz');
+        }
+
+        $('.tab .tab_item').on('click',function(){
+            var $index = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.tab_container').find('.tab_content').eq($index).addClass('show').siblings().removeClass('show');
+        })
+    </script>
+
+
+    
+      <!--右边飞行元素-->
+<ul class="right-side-flyelem show">
+  <a href="javascript:scroll(0,0);"><li class="rsf-items side-icon si-top"></li></a>
+  <li class="right_wc_pic">
+    <img src="../public/Images/front/icon_wechart.png"  class="wc_pic_center">
+    <div class="Wc_qr_pic">
+      <img src="../public/Images/front/wc_add_pic1.jpg" >
+    </div>
+  </li>
+  <a href="javascript:;" target="_blank">
+    <a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_cdQQ/}&site={dede:global.cfg_webname/}&menu=yes" target="_blank">
+    <li class="rsf-items side-icon si-qq"></li>
+  </a>
+  <li class="rsf-items side-icon si-phone"></li>
+</ul>
+<!--关注微信-->
+<div class="wx-2-dimensional-bar-code">
+  <div class="wx-pop-title">
+    <span>微信扫一扫</span>
+  </div>
+  <div class="show-wx2dc"></div>
+  
+  <div class="wx2dc_tip">
+    <em>或者在 <span>添加朋友</span> - <span>查找小程序</span> 搜索 <span>迪英特科技</span></em>
+  </div>
+  <div class="wx-cls-btn"></div>
+</div>
+    
+  </div>
+
+ <script type="text/javascript" src="../public/Js/front/index.js"></script>
+  <script src="../public/Js/front/swiper.3.1.2.jquery.min.js"></script>
+
+</body>
+</html>
+    <!--[if lt IE 9]>
+       <script type="text/javascript" src="../public/Js/front/ie.js" ></script>
+    <![endif]-->
+    <script type="text/javascript" src="../public/Js/front/jquery.scrollfire.min.js"></script>
+    <script type="text/javascript" src="../public/Js/front/jay.plugin.smoothscroll.js" ></script>
+    <script type="text/javascript" src="../public/Js/front/sly.min.js" ></script>
+   <script type="text/javascript" src="../public/Js/front/jay.js"></script> 
+    <script>
+    var contact_tel = '{dede:global.cfg_cdtel/}';
+    var case_type = parseInt('');
+    
+    //案例分类默认展开
+    var clientWidth = $(window).width();
+     $(function(){
+        if(case_type){
+            if(clientWidth>460)
+            {
+                    $("#main_"+case_type).show().siblings().hide();
+                    $(".c_nav").show();
+                    $(".con_rank_title").show();
+                    $("#li_"+case_type).addClass("li_a").siblings().removeClass("li_a");
+            }
+            else
+            {
+                    $("#mid_"+case_type).show().siblings().hide();
+                    $(".c_nav").show();
+                    $(".con_rank_title").show();
+                    $("#li_"+case_type).addClass("li_a").siblings().removeClass("li_a");
+            }
+        }   
+    });
+    
+    function no_news_pic(obj)
+    {
+        obj.setAttribute('src','../public/Images/front/defaultpic.jpg');
+    }
+    function no_pic(obj)
+    {
+        obj.setAttribute('src','../public/Images/front/defaultpic1.jpg');
+    }
+    //导航条的滚动切换
+    $(function(){
+        if ($(window).scrollTop()>10)
+        {
+            $("#ai-header").addClass('cur'); 
+        }
+    });
+    var myVideo = document.getElementById('video');
+    $(window).scroll(function(){  
+        if ($(window).scrollTop()>10)
+        {
+            $("#ai-header").addClass('cur');  
+        }  
+        else  
+        {  
+            $("#ai-header").removeClass('cur');  
+        }
+        if(clientWidth > 1100)
+        {
+            if ($(window).scrollTop()>500)
+            {
+                myVideo.play();
+            }
+        }
+    });
+    //新闻资讯切换
+    function nwxshi(a) 
+    {
+
+        $(".nwnr").hide();
+
+        $("#nw_" + a).show();
+
+        $(".nwxg").removeClass("cur");
+        $("#nwa_" + a).addClass("cur");
+
+    }
+/*案例鼠标经过效果*/
+    $(".img_nav").hover(function()
+        {
+            $(".case_bg",this).stop().animate(
+                {top:"0"})
+        },function()
+        {
+            $(".case_bg",this).stop().animate(
+                {top:"244px"})
+        });
+/*点击案例下导航切换九宫格*/
+    
+    if(clientWidth>460)
+    {
+        $(".nav_btn").on("click",function()
+        {
+            var Obj = $(this).attr("id");
+            var num = Obj.substring(2, Obj.length);
+            $("#main"+num).show().siblings().hide();
+            $(".c_nav").show();
+            $(".con_rank_title").show();
+            $(this).addClass("li_a").siblings().removeClass("li_a");
+        });
+    }
+    else
+    {
+        $(".nav_btn").on("click",function()
+        {
+            var Obj = $(this).attr("id");
+            var num = Obj.substring(2, Obj.length);
+            $("#mid"+num).show().siblings().hide();
+            $(".c_nav").show();
+            $(".con_rank_title").show();
+            $(this).addClass("li_a").siblings().removeClass("li_a");
+        });
+    }
+    if(clientWidth < 800)
+    {
+        $('#contact_link').attr('href', 'tel:' + contact_tel);
+    }
+    
+    if(clientWidth < 460){
+        $('.img_box img').on('click', function(event){
+            event.preventDefault();
+  
+            var row = $(this).data('row');
+            var img_urls = [];
+            $(this).parent().find('img').each(function() {        
+              img_urls.push($(this).attr("src"));
+            });
+            var html = '';
+            for(i=0;i<img_urls.length;i++){
+              html += '<div class="swiper-slide fullscreen_slide"><img src="'+img_urls[i]+'"/></div>';
+            }
+            $('#swiper_wrapper').empty().append(html);
+            $('#fullscreen').fadeIn();
+            var full_swiper = new Swiper('.fullscreen',{
+              //pagination : '.full_pagination',
+            });
+            full_swiper.slideTo(row, 0, false);
+            if(row==0){
+                $("#swiper_wrapper").css({
+                "transform": "translate3d(0px, 0px, 0px)"
+            });
+          }
+        });
+        // 关闭查看器
+        $('#fullscreen').on('click', function(event) {
+            event.preventDefault();
+            $(this).fadeOut();
+        });
+    }
+</script>
+<span style="display:none;"></span>
+
+    
+</body>
+</html>

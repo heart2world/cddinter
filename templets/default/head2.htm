@@ -1,0 +1,43 @@
+<header class="ai-header" id="ai-header">
+<div class="ai-nav-wrap">
+  <div class="ai-nav">
+    <a href="../index.html"><div class="ai-logo"></div></a>
+    <div class="ai-imlink">
+      <i class="tel_icon"></i><a href="tel:{dede:global.cfg_cdtel/}" style="color:#fff;">{dede:global.cfg_cdtel/}</a>
+    </div>
+    <div class="sidebtn"></div>
+   <!-- <div class="qq_top_nav">
+        <div class="qq_box">
+          <div class="img_qq_control img_qq_pic icon_qq"></div>
+        </div>
+        <div class="qq_tips_wrap">
+        </div>
+      </div>-->
+
+    <div class="ai-nav-list">
+      <div class="ai-nav-redLine"><!-- 这个预留了一个滚动条接口 --></div>
+      <a href="../index.html#index_top"  class="ai-nav-listitem cur" toelem="index_top">首页</a>
+      <a href="../index.html#index_serve"  class="ai-nav-listitem " toelem="index_serve">服务项目</a>
+      <a href="../index.html#index_case"  class="ai-nav-listitem " toelem="index_case">客户案例</a>
+      <a href="../index.html#index_news"  class="index_news ai-nav-listitem " toelem="index_news">新闻资讯</a>
+      <a href="../index.html#index_team"  class="ai-nav-listitem " toelem="index_about">团队介绍</a>
+      <a href="../index.html#index_contact"  class="ai-nav-listitem " toelem="index_contact">联系我们</a>
+    </div>
+  </div>
+</div>
+</header>     
+  
+    
+  <div class="ai-banner-wrap ai-eachcont" id="index_top" nav_index="0">
+      <div class="ai-banner-frame clearfix">
+          <!--首屏Banner   not-active / active -->
+          {dede:sql sql="SELECT * FROM dede_banner order by sort desc limit 5"}
+          <div class="banner_list ai-banner-[field:id /]" style="background: url([field:url /]) no-repeat center center;background-size:cover;" >                
+          </div>  
+          {/dede:sql}            
+      </div>        
+      <!-- ai banner controller -->
+      <ul class="ai-banner-pages fix_3px_spc"></ul>
+      <div class="ai-banner-prev font-icons"><span></span></div>
+      <div class="ai-banner-next font-icons"><span></span></div>
+  </div>

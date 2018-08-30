@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
+<title>添加案例类型</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<style>
+.coolbg2
+{
+  border: 1px solid #000000;
+  background-color: #F2F5E9;
+  height:18px;
+}
+.pubinputs
+{
+    height:22px;
+    margin-top: 5px;
+}
+</style>
+<script language='javascript'>
+function CheckSubmit()
+{
+	if(document.form1.catname.value==""){
+		alert("请设定案例类型名称！");
+		document.form1.catname.focus();
+		return false;
+	}
+}
+var startNum = 6;
+function MakeUpload()
+{
+   var upfield = document.getElementById("uploadfield");
+   var endNum =  Number(document.form1.picnum.value)+startNum;
+   if(endNum>40) endNum = 40;
+   for(startNum;startNum<=endNum;startNum++){
+	   upfield.innerHTML += "<input type='file' name='upfile"+startNum+"' style='width:300px' size='30' class='pubinputs' /><br/>";
+   }
+}
+function ResetUpload()
+{
+   var upfield = document.getElementById("uploadfield");
+   upfield.innerHTML = "";
+   startNum = 2;
+}
+</script>
+</head>
+<body background="images/allbg.gif" leftmargin='8' topmargin='8'>
+<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#D6D6D6">
+  <tr> 
+    <td height="28" background='images/tbg.gif'>
+    	<table width="98%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td width="2%" align="center" valign="middle"><img src="images/item_tt2.gif" width="7" height="15" /></td>
+          <td width="44%"><strong>添加案例类型：</strong></td>
+          <td width="54%" align="right">[<a href='cat_list.php'><u>案例管理</u></a>]</td>
+        </tr>
+      </table>
+     </td>
+  </tr>
+  <tr> 
+    <td height="69" align="center" valign="top" bgcolor="#FFFFFF">
+    	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <form enctype="multipart/form-data" name='form1' action="cat_add.php" method="POST" onSubmit="return CheckSubmit();">
+          <input type="hidden" name="dopost" value="upload" />   
+          <tr> 
+            <td height="30" align="center" bgcolor="#FFFFFF"  class='bline'>案例类型名称：</td>
+            <td height="25" bgcolor="#FFFFFF"  class='bline' style="text-align:left;">
+            	<input name="catname" type="text" id="catname" size="30" style="width:300px" />
+            </td>
+          </tr>
+          <tr> 
+            <td height="30" align="center" bgcolor="#FFFFFF"  class='bline'>排序：</td>
+            <td height="25" bgcolor="#FFFFFF"  class='bline' style="text-align:left;">
+              <input name="sort" type="number" id="sort" value="" style="width:200px;height: 20px;" />
+            </td>
+          </tr>
+          <tr> 
+            <td height="50" colspan="2" bgcolor="#FFFFFF">
+            	<table width="60%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td align="center">
+				             <input class="np" name="imageField" type="image" src="images/button_save.gif" width="60" height="22" border="0" /> 
+                  </td>
+                </tr>
+              </table>
+             </td>
+          </tr>
+        </form>
+      </table>
+      </td>
+  </tr>
+</table>
+	</body>
+</html>
